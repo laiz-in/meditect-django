@@ -3,23 +3,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Add necessary meta tags, stylesheets, and other head elements -->
 </head>
-<body >
-  {% block content%}
-    
-<!--=======================================================   BACK TO HOME BUTTON (ROUND) STARTS   ================================================-->
+<body>
+  {% block content %}
+    <!-- BACK TO HOME BUTTON (ROUND) STARTS -->
+    <a href="{% url 'alzheimers' %}" class="round-button">
+      <img src="{% static 'assets/up-arrow.png' %}" alt="Up Arrow">
+    </a>
+    <!-- BACK TO HOME BUTTON (ROUND) ENDS -->
 
-  <a href="{% url 'alzheimers' %}" class="round-button">
-    <img src="{% static 'assets/up-arrow.png' %}" alt="Up Arrow">
-  </a>
-<!--=======================================================   BACK TO HOME BUTTON (ROUND) ENDS   ================================================-->
-
-
+    <!-- ALZHEIMERS SECTION -->
     <section id="alzheimerssection">
-       <div class="row bg-danger">
-        <h1 class="text-light">THIS IS ALZHEIMERS PAGE</h1>
-       </div>
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <!-- Image Upload Form -->
+            <form class="image-upload-form" method="post" enctype="multipart/form-data">
+              {% csrf_token %}
+              <div class="form-group">
+                <label for="image">Select an image:</label>
+                <input type="file" class="form-control" id="image" name="image" accept="image/*" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Upload Image</button>
+            </form>
+          </div>
+        </div>
+        {% if result_text %}
+        <!-- Display the result_text if available -->
+        <div class="row justify-content-center mt-3">
+          <div class="col-md-6">
+            <div class="result-text">
+              <h3>Result Text:</h3>
+              <p>{{ result_text }}</p>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      </div>
     </section>
-
- {% endblock content%}
+  {% endblock content %}
 </body>
+</html>
