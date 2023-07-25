@@ -1,0 +1,25 @@
+{% include 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body >
+  {% block content%}
+    
+<!--=======================================================   BACK TO HOME BUTTON (ROUND) STARTS   ================================================-->
+
+  <a href="{% url 'diabeticretinopathy' %}" class="round-button">
+    <img src="{% static 'assets/up-arrow.png' %}" alt="Up Arrow">
+  </a>
+<!--=======================================================   BACK TO HOME BUTTON (ROUND) ENDS   ================================================-->
+
+
+    <section id="diabeticretinopathy">
+       <div class="row bg-danger">
+        <h1 class="text-light">THIS IS DIABETIC RETINOPATHY PAGE</h1>
+       </div>
+    </section>
+
+ {% endblock content%}
+</body>

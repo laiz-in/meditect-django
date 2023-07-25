@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditect.ai</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="static/js.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </head>
+<body >
+<!--=======================================================   BACK TO HOME BUTTON (ROUND) STARTS   ================================================-->
+
+  <a href="" class="round-button">
+    <img src="static/assets/up-arrow.png" alt="Up Arrow">
+  </a>
+<!--==========================================================   BACK TO HOME BUTTON (ROUND) ENDS   ================================================-->
+
+<!--==========================================================           HEADER  STARTS             ================================================-->
+
+    <div class="header">
+      <div class="row">
+
+        <!-- LOGO SECTION-->
+        <div class="col-6 col-sm-6 col-xs-6 mt-3 ">
+          <a href="">
+            <img class="img-fluid" src="static\assets\meditect-logo.png" alt="Logo">
+          </a>
+        </div>
+         
+        <!-- TOGGLE BUTTON AND NAVBAR -->
+        <div class="col-6 col-sm-6 mt-0 col-xs-6 ">
+          <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid ">
+              <button class="navbar-toggler ms-auto ml-auto custom-button navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon align-items-sm-end "></span>
+              </button>
+              <div class="collapse navbar-collapse mt-lg-3" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#foot">about us</a>
+                  </li>
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{% url 'bmi' %}">BMI analysis</a></li>
+                      <li><a class="dropdown-item" href="{% url 'alzheimers' %}">alzheimers analysis</a></li>
+                      <li><a class="dropdown-item" href="{% url 'heartdisease' %}">Heart disease analysis</a></li>
+                      <li><a class="dropdown-item" href="{% url 'skindisease' %}">Skin disease analysis</a></li>
+                      <li><a class="dropdown-item" href="{% url 'diabeticretinopathy' %}">Diabetics analysis</a></li>
+                      <li><a class="dropdown-item" href="{% url 'diabeticdisease' %}">Diabetics retinopathy</a></li>
+
+
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#foot">contact</a>
+                  </li>
+                </ul>
+        
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+<!--==========================================================   HEADER SECTION ENDS    ================================================-->
+
+<!--==========================================================   AI IN HEALTHCARE STARTS   ================================================-->
+<section  id="healthcare">
+
+  <div class="row">
+                <!-- MAIN HEADING-->
+                <div class="col-md-12 col-sm-12">
+                  <h1>AI in Healthcare: Revolutionizing the Future of Medicine</h1>
+                </div>
+  </div>
+
+  <div class="row ">
+    <!-- MAIN HEADING IMAGE-->
+                <div class="col-md-6 col-sm-12">
+                  <div class="image-text-container">
+                    <img src="static\assets\ai-in-healthcare-copy.jpg" alt="AI in healthcare">
+                  </div>
+                </div>
+
+    <!-- MAIN PARAGRAPH-->
+              <div class="col-md-6 col-sm-12">
+                <p>Artificial Intelligence (AI) has emerged as a transformative force across various industries, and one area where its potential is being realized is healthcare. The integration of AI technologies into healthcare systems has the potential to revolutionize the way we approach diagnosis, treatment, and patient care. From enhancing diagnostic accuracy to improving patient outcomes, AI is paving the way for a new era in healthcare.
+                  <br><br> One of the primary applications of AI in healthcare is medical imaging analysis. Radiology, for instance, has greatly benefited from AI algorithms that can analyze medical images such as X-rays, CT scans, and MRIs. These algorithms can accurately detect abnormalities and assist radiologists in making faster and more precise diagnoses. AI-powered imaging systems have proven to be particularly effective in identifying early signs of diseases like cancer, enabling early intervention and potentially saving lives.
+                </p>
+                <!-- READ MORE BUTTON-->
+                <a href="" class="btn btn-light-blue btn-md">Read more..</a>
+                <a href="" class="btn btn-light-blue btn-md">
+                  Get started <i class="fas fa-arrow-right"></i>
+                </a>
+                
+              </div>
+  </div>
+</section>
+<!--==========================================================   AI IN HEALTHCARE ENDS   ==================================================================-->
+
+
+<!--=========================================================      CARDS  STARTS            ====================================================================-->
+
+<section  id="cards">
+
+      <!-- Card deck -->
+      <div class="card-deck row">
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+            <!-- Card -->
+            <div class="card gradient-border">      
+              <!--Card image-->
+                  <div class="view overlay">
+                    <img class="card-img-top" src="static\assets\bmi-photo.jpg" alt="Card image cap">
+                    <a href="#!">
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+              <!--Card content-->
+              <div class="card-body">      
+                <!--Title-->
+                <h4 class="card-title ">Body mass index (BMI)</h4>
+                <!--Text-->
+                <p class="card-text">BMI is a measure used to assess an individual's weight status in relation to their height.</p>
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8920809/" class="btn btn-light-blue btn-md">Read more</a>
+                <a href="{% url 'bmi' %}" class="btn btn-light-blue btn-md">
+                  <i class="fas fa-check-circle"></i> Try it out
+                </a>
+              </div>   
+            </div>
+            <!-- Card -->
+            </div>
+      
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+        <!-- Card -->
+        <div class="card mb-4 gradient-border">
+      
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top" src="static\assets\pneumonia-photo.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+      
+          <!--Card content-->
+          <div class="card-body">
+      
+            <!--Title-->
+            <h4 class="card-title " >Alzheimer's disease detection</h4>
+            <!--Text-->
+            <p class="card-text">Preditct the chances of Alzheimer's disease with machine learning</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <a href="https://www.alz.org/alzheimers-dementia/what-is-alzheimers" class="btn btn-light-blue btn-md">Read more</a>
+            <a href="{% url 'alzheimers' %}" class="btn btn-light-blue btn-md">
+              <i class="fas fa-check-circle"></i> Try it out
+            </a>
+      
+          </div>
+      
+        </div>
+        <!-- Card -->
+      </div>
+      
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <!-- Card -->
+        <div class="card mb-4 gradient-border">
+      
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top " src="static\assets\heart-photo.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+      
+          <!--Card content-->
+          <div class="card-body">
+      
+            <!--Title-->
+            <h4 class="card-title">Heart disease analysis</h4>
+            <!--Text-->
+            <p class="card-text">Use machine learning to predict the chances of heart diseases</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <a href="https://www.creative-biolabs.com/drug-discovery/diagnostics/cardiovascular.htm?gclid=CjwKCAjwtuOlBhBREiwA7agf1uw5B_yxYVpFDVc9OdVC3uj4g_WpZUvy3SY58s9UJ2IlV2PNzQFa8hoCmuwQAvD_BwE" class="btn btn-light-blue btn-md">Read more</a>
+                <a href="{% url 'heartdisease' %}" class="btn btn-light-blue btn-md">
+                  <i class="fas fa-check-circle"></i> Try it out
+                </a>
+          </div>
+      
+        </div>
+        <!-- Card -->
+      </div>
+      
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <!-- Card -->
+        <div class="card gradient-border">
+      
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top" src="static\assets\skin-diseases.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+      
+          <!--Card content-->
+          <div class="card-body">
+      
+            <!--Title-->
+            <h4 class="card-title">Skin diseases analysis</h4>
+            <!--Text-->
+            <p class="card-text">Use deep learning to analyse the skin diseases with the image you provide </p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <a href="https://my.clevelandclinic.org/health/diseases/21573-skin-diseases" class="btn btn-light-blue btn-md">Read more</a>
+                <a href="{% url 'skindisease' %}" class="btn btn-light-blue btn-md">
+                  <i class="fas fa-check-circle"></i> Try it out
+                </a>
+          </div>
+      
+        </div>
+        <!-- Card -->
+      </div>
+       
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <!-- Card -->
+        <div class="card mb-4 gradient-border">
+      
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top" src="static\assets\retina-photo.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+      
+          <!--Card content-->
+          <div class="card-body">
+      
+            <!--Title-->
+            <h4 class="card-title">Diabetic retinopathy Disease</h4>
+            <!--Text-->
+            <p class="card-text">With the retinal images , find the chances of diabetic retinopathy</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <a href="https://www.sightsavers.org/protecting-sight/diabetic-retinopathy/?gad=1&gclid=CjwKCAjwtuOlBhBREiwA7agf1r5M9FqsevojPPywyCyJq0XLsKXmDWNlU_lNsILuIsqtXSXmPkslaxoCFJgQAvD_BwE" class="btn btn-light-blue btn-md">Read more</a>
+                <a href="{% url 'diabeticretinopathy' %}" class="btn btn-light-blue btn-md">
+                  <i class="fas fa-check-circle"></i> Try it out
+                </a>
+          </div>
+      
+        </div>
+        <!-- Card -->
+      </div>
+      
+      <div class="col-xs-12 col-sm-6 col-md-4">  
+        <!-- Card -->
+        <div class="card mb-4 gradient-border">
+      
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top" src="static\assets\alzheimers.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+      
+          <!--Card content-->
+          <div class="card-body">
+      
+            <!--Title-->
+            <h4 class="card-title">Diabetic Disease analysis</h4>
+            <!--Text-->
+            <p class="card-text">Predict the chances of Diabetic Disease with machine learning algorithm</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <a href="https://understandingdiabetes.org/?gclid=CjwKCAjwtuOlBhBREiwA7agf1vGfeyMAO4IpAVAjUfA_G9xYUTUJws-05jRvuneyKszxvsm42pN2_RoCTggQAvD_BwE" class="btn btn-light-blue btn-md">Read more</a>
+                <a href="{% url 'diabeticdisease' %}" class="btn btn-light-blue btn-md">
+                  <i class="fas fa-check-circle"></i> Try it out
+                </a>
+          </div>
+      
+        </div>
+        <!-- Card -->
+      </div>
+      
+      </div>
+      <!-- Card deck -->
+        
+    </section>
+    <!--======================================================       CARD SECTION ENDS          ====================================================-->
+
+<!--==========================================================   CONTACT SECTION STARTS    ================================================-->
+<section id="contactme">
+    <h1>we need to add contents here</h1>
+</section>
+<!--==========================================================   CONTACT SECTION ENDS    ================================================-->
+  
+    
+<!--======================================================          FOOTER SECTION      ==========================================================-->
+    <footer id= "foot" class="text-light fter">
+    <div class=" footer-container ">
+        <div class="row fter">
+            <div class="col-md-6 col-lg-6 col-xl-6 ">
+                <h5>Contact me</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <p class="mb-0">
+                    This web app was developed with Django-Python for the backend and HTML, CSS, and Bootstrap for the frontend. It is completely made for study purposes, and the functionalities are useful. Various AI applications are integrated with this web app. Please contact for any queries or improvements.
+                </p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+                <h5>Links</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <ul class="list-unstyled">
+                  <li class="d-inline">
+                      <a href="#" class="logo-link">
+                          <i class="fab fa-instagram"></i>
+                      </a>
+                  </li>
+                  <li class="d-inline">
+                      <a href="#" class="logo-link">
+                          <i class="fab fa-github"></i>
+                      </a>
+                  </li>
+                  <li class="d-inline">
+                      <a href="mailto:your_email@example.com" class="logo-link">
+                          <i class="fas fa-envelope"></i>
+                      </a>
+                  </li>
+              </ul>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3">
+                <h5>Contact</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-home mr-2"></i> Laizin V</li>
+                    <li><i class="fa fa-envelope mr-2"></i> laizin2107@gmail.com</li>
+                    <li><i class="fa fa-phone mr-2"></i> +91 8113937942</li>
+                    <li><i class="fa fa-print mr-2"></i> +971 503349730</li>
+                </ul>
+            </div>
+            <div class="col-12 text-center">
+                <p class="text-secondary">created by Laizin | <span>v. 1.0</span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

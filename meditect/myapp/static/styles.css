@@ -1,0 +1,401 @@
+/*  LOGO CSS*/
+.img-fluid {
+    /* position: relative; */
+    left: 15px;
+    background-size: contain;
+    max-height: 150px;
+}
+/* BODY OF ALL HTML PAGES*/
+body{
+  background: linear-gradient(to right, rgb(4, 19, 36),rgb(68, 67, 67));
+}
+/*HEADER SECTION*/
+.header {
+    background:transparent;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color:  white;
+  }
+.container-fluid .navbar-toggler-icon {
+  color: white;
+}
+/*========================================================       AI in healthcare section CSS  =======================================*/
+#healthcare{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  margin-bottom: 50px;
+} 
+#healthcare h1{
+    background: linear-gradient(to right, #b731ec, #eb2153);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* For webkit-based browsers (Chrome, Safari, etc.) */
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 1000;
+    font-size: 75px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .image-text-container img {
+    width: auto; 
+    border-radius:25px ;
+  }
+  .image-text-container {
+    display: flex;
+    align-items: center;
+  }
+  #healthcare p{
+    font-family: 'Poppins', sans-serif;
+    font-size:20px;
+    color: rgb(177, 173, 173);
+    font-weight: 500;
+  }
+  #healthcare a {
+    background: linear-gradient(to right, #113444, #172b33);
+    margin-right: 35px;
+    color: #cac8c8;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  #healthcare a:hover{
+    background: linear-gradient(to right, #0e4766, #032a3a);
+
+  }
+
+  .container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+#navbarSupportedContent ul li:not(:first-child) a {
+    color: rgb(204, 201, 201);
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    padding:8px;
+    border-radius: 12px;
+    margin: 1rem;
+
+}
+#navbarSupportedContent ul li a:hover, #navbarSupportedContent ul li .active{
+    color: rgb(249, 252, 251);
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #731499, #b30a34);
+    border-radius: 12px;
+    transition: 0ms;
+    padding: 8px;
+    margin: 1rem;
+    box-shadow: rgba(44, 43, 43, 0.25) 0px 30px 30px, rgba(49, 48, 48, 0.12) 0px -12px 30px, rgba(41, 41, 41, 0.12) 0px 4px 6px, rgba(49, 49, 49, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+#navbarSupportedContent .dropdown ul li a:hover{
+     width:max-content;
+}
+
+
+.dropdown ul{
+    background: linear-gradient(to right,  rgb(15, 19, 22), rgb(18, 31, 39));
+    border: none;
+    margin-right: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.navbar-nav{
+    margin-left: auto;
+}
+.navbar{
+      margin-top: 20px;
+}
+.custom-button{
+    background-color: white;
+    color: white;
+}
+
+  .round-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #b731ec, #eb2153);
+    position: fixed;
+    bottom: 55px;
+    right: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  .round-button img {
+    width: 100%;
+    height: 50%;
+    width: 50%;
+  }
+  
+footer a {
+    color: #f8f9fa!important
+}
+.footer-container{
+  background: linear-gradient(to right,  rgb(15, 19, 22), rgb(18, 31, 39));
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    border-radius: 15px ;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+.fter{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fadeaway-button {
+  display: inline-block;
+  animation-name: fadeOut;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+/*======================================================================    CARD DESIGNS             ==============================================================*/
+.card-body{
+  background: linear-gradient(to right,  rgb(15, 19, 22), rgb(18, 31, 39));
+  margin: 0;
+  padding: 2px;
+  transition: 0.6s;
+  border-radius: 0 0 25px 25px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card-body:hover{
+  transform: translateY(-12px);
+}
+.card-body button{
+  background: linear-gradient(to right, #113444, #172b33);
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  
+}
+.card-body a{
+  background: linear-gradient(to right, #113444, #172b33);
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  
+}
+.card-body button:hover, .card-body a:hover{
+  background: linear-gradient(to right, #0e4766, #032a3a);
+  color: white;
+  border: none;
+}
+
+.card-deck .gradient-border {
+background: transparent;
+border: none;
+
+}
+.card-img-top{
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.card-title{
+  font-family: 'Poppins', sans-serif;
+  color: #f8fafa !important;
+}
+.card-text{
+  font-family: 'Poppins', sans-serif;  
+  color: #9f9fa3;
+}
+.card{
+  padding: 10px;
+}
+#cards{
+  padding: 12px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* CSS */
+#contactme {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right,  rgb(15, 19, 22), rgb(18, 31, 39));
+  padding: 3px;
+  border-radius:20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+/*=======================================================================    ReadMoreAboutAI.html CSS START    =================================================================*/
+#ReadMoreAboutAI{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*=======================================================================    ReadMoreAboutAI.html CSS ENDS  =================================================================*/
+
+/*=======================================================================    BMI CSS ENDS  =================================================================*/
+#bmisection{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*=======================================================================    BMI CSS ENDS  =================================================================*/
+
+/*=======================================================================    DIABETIC DISEASE CSS STARTS  =================================================================*/
+#diabeticdisease{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*=======================================================================    DIABETIC DISEASE CSS ENDS  =================================================================*/
+
+/*=======================================================================    DIABETIC RETINOPATHY CSS STARTS  =================================================================*/
+#diabeticretinopathy{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+/*=======================================================================    DIABETIC RETINOPATHY CSS ENDS  =================================================================*/
+
+
+/*=======================================================================    SKIN CSS STARTS  =================================================================*/
+#skindiseasesection{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*=======================================================================    SKIN CSS ENDS  =================================================================*/
+
+/*=======================================================================    HEART DISEASE CSS ENDS  =================================================================*/
+#heartdiseasesection{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*=======================================================================    HEART DISEASE CSS ENDS  =================================================================*/
+
+/*=======================================================================    PNEUMONIA DISEASE CSS STARTS  =================================================================*/
+#alzheimerssection{
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*=======================================================================    PNEUMONIA DISEASE CSS ENDS  =================================================================*/
+
+
+
+/*=======================================================================    FOR MOBILE DEVICES     =================================================================*/
+@media (max-width: 600px) {
+  .card-title{
+    font-size: 17px;
+  }
+  .card-text{
+    font-size: 13px;
+  }
+   .read-more-btn{
+    max-width: fit-content;
+    font-size: 12px;
+  
+   }
+   .get-started-btn{
+    max-width: fit-content;
+    font-size: 12px;
+    margin-left: 6px;
+   }
+  .container-fluid{
+    margin-top: 0;
+  }
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+  }
+  #healthcare h1{
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+
+  }
+  #contactme{
+    width:95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    .fter{
+        width:95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fter p{
+        font-size: 12px;
+    }
+    .fter h5{
+       padding-top: 10px;    }
+   .footer-container{
+    width: 100% ;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   /*=========================================================== AI IN HEALTHCARE FOR MOBILE  =====================================*/
+   #healthcare p{
+    padding-top: 9px;
+    font-size:13px;
+    color: rgb(177, 173, 173);
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+    .header {
+      width: 100%; 
+      margin-left: 0;
+      margin-right: 0; 
+      background: transparent;
+    }
+    body{
+        min-width: 100% !important;
+        max-width: 100%;
+        background:linear-gradient(to right, #050f13, #041b24);
+        margin: 0;
+        padding:0;
+    }
+     #healthcare{
+        width:100%;
+     
+    }
+    .custom-button{
+        background-color: white;
+        color: white;
+    }
+    .image-text-container {
+        /* max-height: 35px; */
+        display: none;
+
+    }
+    .img-fluid{
+      max-height: 65px;
+    }
+    #navbarSupportedContent ul li a{
+      margin: 0rem;
+    }
+  
+  }
