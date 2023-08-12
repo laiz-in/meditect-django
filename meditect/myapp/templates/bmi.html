@@ -16,9 +16,34 @@
 
 
     <section id="bmisection">
-       <div class="row bg-danger">
-        <h1 class="text-light">THIS IS BMI PAGE</h1>
+       <!--FIRST ROW-->
+       <div class="row ">
+          <div class="col-lg-6 col-sm-12 col-xs-12 mb-5 mb-xs-2 bmifirstrow">
+            <h3>Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women</h3>
+            <h3><br>Please enter yout height and weight to see the results and suggestions to maintain your BMI</h3>    
+            <form action="{% url 'bmi' %}" method="post">
+              {% csrf_token %}
+              <label for="height"></label>
+              <input type="number" name="height" id="height" placeholder= "Please enter height in CM" class="input-field" required>
+              <br>
+              <label for="weight"></label>
+              <input type="number" name="weight" placeholder="Please enter weight in KG" id="weight" class="input-field" required>
+              <br>
+              <input type="submit" value="Calculate BMI" class="calculate-button">
+          </form>
+          {% if bmi_result %}
+              <p class="bmi-result">Your BMI is  {{ bmi_result }}</p>
+          {% endif %}        
+          </div>
+          <div class="col-lg-6 col-sm-12 col-xs-12 mb-5 mb-xs-2 firstrow-rightside ">
+            <h3> Limitations of using BMI to help diagnose weight types</h3>
+            <h4><br>BMI doesn’t differentiate between lean body mass (the weight of everything in your body except fat) and fat mass. Because of this, a person can have a high BMI (by being muscular) but still have a very low fat mass and vice versa.
+              <br>The same BMI chart is used for adults assigned male at birth (AMAB) and adults assigned female at birth (AFAB) even though adults AFAB typically have more body fat than adults AMAB.
+            <br>The BMI chart hasn’t been adjusted for the increasing average adult height over the years. </h4>
+      </div>
        </div>
+
+
     </section>
 
  {% endblock content%}

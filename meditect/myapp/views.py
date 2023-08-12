@@ -1,12 +1,33 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+import pandas as pd
+import pickle
 
 # Create your views here.
 def index(request):
    return render(request, 'home.html')
 
 def bmi(request):
-   return render(request, 'bmi.html')
+      if request.method == 'POST':
+        height = float(request.POST.get('height'))
+        weight = float(request.POST.get('weight'))
+
+        # Check if height and weight are valid numbers
+        if height <= 0 or weight <= 0:
+            return render(request, 'bmi.html', {'error_message': 'Please enter valid values for height and weight.'})
+        # Calculate BMI
+        bmi = round(weight / ((height / 100) ** 2))
+        return render(request, 'bmi.html', {'bmi_result': bmi})
+      
+
+
+
+
+      
+      return render(request, 'bmi.html')
+
+
+
 
 def diabeticdisease(request):
    return render(request, 'diabeticdisease.html')

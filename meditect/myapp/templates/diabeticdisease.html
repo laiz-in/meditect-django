@@ -16,9 +16,51 @@
 
 
     <section id="diabeticdisease">
-       <div class="row bg-danger">
-        <h1 class="text-light">THIS IS DIABETIC PAGE</h1>
-       </div>
+      <div class="container">
+        <form id="diabetic-form" action="{% url 'diabeticdisease' %}" method="post">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="input-group mb-2">
+                        <input type="number" name="pregnancies" class="form-control" step="1" required placeholder="Pregnancies">
+                    </div>
+                    <div class="input-group mb-2">
+                        <input type="number" name="glucose" class="form-control" step="0.01" required placeholder="Glucose">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="input-group mb-2">
+                        <input type="number" name="bloodPressure" class="form-control" step="1" required placeholder="Blood Pressure">
+                    </div>
+                    <div class="input-group mb-2">
+                        <input type="number" name="skinThickness" class="form-control" step="1" required placeholder="Skin Thickness">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="input-group mb-2">
+                        <input type="number" name="insulin" class="form-control" step="1" required placeholder="Insulin">
+                    </div>
+                    <div class="input-group mb-2" >
+                        <input type="number" name="bmi" class="form-control" step="0.01" required placeholder="BMI">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="input-group mb-2">
+                        <input type="number" name="diabetesPedigreeFunction" class="form-control" step="0.01" required placeholder="Diabetes Pedigree Function">
+                    </div>
+                    <div class="input-group mb-2">
+                        <input type="number" name="age" class="form-control" step="1" required placeholder="Age">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
     </section>
 
  {% endblock content%}
